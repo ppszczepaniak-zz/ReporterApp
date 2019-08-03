@@ -7,22 +7,22 @@ public abstract class Website {
 
 
 
-    protected abstract long countScore(String msg);
-    protected abstract String capitalizeChosenLetters(String msg);
+    protected abstract void countAndMark(String msg);
 
-    public long getScore() {
+
+    protected long getScore() {
         return score;
     }
 
-    public void setScore(long score) {
+    protected void setScore(long score) {
         this.score = score;
     }
 
-    public String getConvertedMsg() {
+    protected String getConvertedMsg() {
         return convertedMsg;
     }
 
-    public void setConvertedMsg(String convertedMsg) {
+    protected void setConvertedMsg(String convertedMsg) {
         this.convertedMsg = convertedMsg;
     }
 
