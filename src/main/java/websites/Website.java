@@ -37,6 +37,7 @@ public abstract class Website implements Observer {
     public String outputMessage(String msg) {
         countAndMark(msg);
         String message = "(" + getName() + ", " + getScore() + ") informs: " + getConvertedMsg();
+        System.out.println(message);
         return message;
     }
 }
