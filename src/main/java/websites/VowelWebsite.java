@@ -2,6 +2,7 @@ package websites;
 
 public class VowelWebsite extends Website {
 
+    @Override
     public void countAndMark(String msg) {
         long count = 0;
         StringBuilder newMsg = new StringBuilder();
@@ -25,15 +26,4 @@ public class VowelWebsite extends Website {
         setConvertedMsg(newMsg.toString());
     }
 
-
-    @Override
-    public long countScore(String msg) {
-
-        return 0;
-    }
-
-    @Override
-    public String capitalizeChosenLetters(String msg) {
-        return null;
-    }
 }
