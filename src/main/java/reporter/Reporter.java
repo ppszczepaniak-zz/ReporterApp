@@ -1,4 +1,11 @@
 package reporter;
 
-public class Reporter {
+public class Reporter implements Broadcast {
+
+
+
+    @Override
+    public void broadcastMessage(String msg) {
+
+    }
 }

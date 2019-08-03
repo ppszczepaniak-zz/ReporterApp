@@ -1,4 +1,7 @@
 package websites;
 
-public class Website {
+public abstract class Website {
+
+    public abstract long countScore(String msg);
+
 }
