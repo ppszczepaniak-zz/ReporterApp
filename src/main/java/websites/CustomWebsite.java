@@ -1,6 +1,11 @@
 package websites;
 
 public class CustomWebsite extends Website{
+    static final String NAME = "Custom Feed";
+
+    public CustomWebsite() {
+        super(NAME);
+    }
 
     @Override
     public void countAndMark(String msg) {

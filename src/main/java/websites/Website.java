@@ -2,9 +2,13 @@ package websites;
 
 public abstract class Website implements Observer {
 
+    private String name;
     private long score;
     private String convertedMsg;
 
+    public Website(String name) {
+        this.name = name;
+    }
 
     protected abstract void countAndMark(String msg);
 
@@ -25,9 +29,14 @@ public abstract class Website implements Observer {
         this.convertedMsg = convertedMsg;
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String outputMessage(String msg) {
-        return null;
+        countAndMark(msg);
+        String message = "(" + getName() + ", " + getScore() + ") informs: " + getConvertedMsg();
+        return message;
     }
 }
