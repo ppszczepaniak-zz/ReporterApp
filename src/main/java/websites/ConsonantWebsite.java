@@ -1,4 +1,10 @@
 package websites;
 
-public class ConsonantWebsite {
+public class ConsonantWebsite extends Website {
+
+
+    @Override
+    protected void countAndMark(String msg) {
+
+    }
 }
