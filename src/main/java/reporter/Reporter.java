@@ -21,6 +21,9 @@ public class Reporter implements Broadcast {
         }
     }
 
+    public List<Website> getWebsites() {
+        return websites;
+    }
 
     @Override
     public void broadcastMessage(String msg) {
