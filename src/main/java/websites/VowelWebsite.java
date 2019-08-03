@@ -12,8 +12,7 @@ public class VowelWebsite extends Website {
 
         if (msg.length() > 0) {
             for (int i = 0; i < msg.length(); i++) {
-                char ch = msg.charAt(i);
-                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                if (String.valueOf(msg.charAt(i)).matches("[aeiou]")) {
                     count++;
                     newMsg.append(String.valueOf(msg.charAt(i)).toUpperCase());
                 } else {
@@ -21,9 +20,7 @@ public class VowelWebsite extends Website {
                 }
             }
         }
-
         setScore(count);
         setConvertedMsg(newMsg.toString());
     }
-
 }
