@@ -9,6 +9,10 @@ public class Reporter implements Broadcast {
 
     protected List<Website> websites = new ArrayList<>();
 
+    public List<Website> getWebsites() {
+        return websites;
+    }
+
     public void addWebsite(Website website) {
         if (website != null) {
             websites.add(website);
