@@ -40,12 +40,4 @@ public class ReporterTest {
 
     }
 
-//    @Test
-//    public void broadcastMessageTest(){
-//        //Assertions.assertE
-//        reporter.broadcastMessage(msg);
-//        System.out.println("----");
-//        System.out.println(website1.getConvertedMsg());
-//    }
-
 }
