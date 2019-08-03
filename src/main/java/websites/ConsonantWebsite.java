@@ -1,6 +1,6 @@
 package websites;
 
-public class ConsonantWebsite extends Website implements Observer{
+public class ConsonantWebsite extends Website {
 
     @Override
     public void countAndMark(String msg) {
@@ -28,9 +28,5 @@ public class ConsonantWebsite extends Website implements Observer{
         setConvertedMsg(newMsg.toString());
     }
 
-    @Override
-    public String outputMessage(String msg) {
-        return null;
-    }
 }
 
