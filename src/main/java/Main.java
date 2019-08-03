@@ -19,7 +19,7 @@ public class Main {
         reporter.addWebsite(customWebsite);
 
         reporter.broadcastMessage("Cows lose their jobs as milk prices drop");
-//a
+
     }
 }
 
