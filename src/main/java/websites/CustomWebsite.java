@@ -8,38 +8,30 @@ public class CustomWebsite extends Website {
     }
 
     @Override
-    public long countScore(String msg) {
-        if (!msg.matches("[a-kA-K]") || msg.equals(null))return 0;
-
-
+    public void countAndMark(String msg) {
         long score = 0;
-        for (int i = 0; i < msg.length() ; i++) {
-            if(String.valueOf(msg.charAt(i)).matches("a-kA-K")){
-                score++;
-
-            }
-
-        }
-
-
-        return score ;
-    }
-
-    @Override
-    public String capitalizeChosenLetters(String msg) {
         StringBuilder stringBuilder = new StringBuilder();
+        try{
+            if (msg.length() > 0) {
+            msg = msg.toLowerCase();
+            for (int i = 0; i < msg.length(); i++) {
 
-        for (int i = 0; i < msg.length(); i++) {
-            if(String.valueOf(msg.charAt(i)).matches("[a-kA-K]")){
-                stringBuilder.append(String.valueOf(msg.charAt(i)).toUpperCase());
-
-            }
-            else {
-                stringBuilder.append(msg.charAt(i));
+                if (String.valueOf(msg.charAt(i)).matches("[a-kA-K]")) {
+                    score++;
+                    stringBuilder.append(String.valueOf(msg.charAt(i)).toUpperCase());
+                } else {
+                    stringBuilder.append(msg.charAt(i));
+                }
             }
         }
-        return stringBuilder.toString();
+        } catch (NullPointerException e){
+            System.out.println("Komunikat błędu: " + e.getMessage());
+        }
+        setScore(score);
+        setConvertedMsg(stringBuilder.toString());
     }
+
+
 
     @Override
     public String toString() {

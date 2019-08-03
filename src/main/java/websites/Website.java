@@ -10,7 +10,7 @@ public abstract class Website {
     protected abstract void countAndMark(String msg);
 
 
-    protected long getScore() {
+    public long getScore() {
         return score;
     }
 
@@ -18,7 +18,7 @@ public abstract class Website {
         this.score = score;
     }
 
-    protected String getConvertedMsg() {
+    public String getConvertedMsg() {
         return convertedMsg;
     }
 
