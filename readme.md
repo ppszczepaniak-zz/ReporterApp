@@ -44,3 +44,4 @@ Napisz testy jednostkowe sprawdzające poprawność działania poszczególnych p
 
 2. Wskazówka: użyj jednego z wzorców czynnościowych (behavioral patterns).
 * https://czub.info/2015/wzorzec-observer-obserwator/
+.
