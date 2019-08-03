@@ -4,7 +4,6 @@ public class VowelWebsite extends Website {
 
     @Override
     public void countAndMark(String msg) {
-
         long count = 0;
         StringBuilder newMsg = new StringBuilder();
 
