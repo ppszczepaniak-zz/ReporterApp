@@ -2,11 +2,6 @@ package websites;
 
 public class CustomWebsite extends Website {
 
-    public CustomWebsite() {
-        super();
-
-    }
-
     @Override
     public void countAndMark(String msg) {
         long score = 0;
@@ -29,12 +24,6 @@ public class CustomWebsite extends Website {
         }
         setScore(score);
         setConvertedMsg(stringBuilder.toString());
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "CustomWebsite{}";
+    
     }
 }
