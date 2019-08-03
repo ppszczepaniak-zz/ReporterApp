@@ -2,11 +2,17 @@ package websites;
 
 public class CustomWebsite extends Website {
 
+    public CustomWebsite() {
+        super();
 
+    }
 
     @Override
     public long countScore(String msg) {
-        return 0;
+
+
+
+        return 0 ;
     }
 
     @Override
