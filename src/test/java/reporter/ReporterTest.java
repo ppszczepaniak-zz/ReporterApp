@@ -37,6 +37,7 @@ public class ReporterTest {
     public void deleteWebsiteTest(){
         reporter.deleteWebsite(website1);
         Assertions.assertNotEquals(website1,reporter.getWebsites().get(0) );
+        Assertions.assertEquals(website2,reporter.getWebsites().get(0) );
 
     }
 
