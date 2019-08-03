@@ -27,5 +27,6 @@ public class ConsonantWebsite extends Website {
         setScore(count);
         setConvertedMsg(newMsg.toString());
     }
+
 }
 

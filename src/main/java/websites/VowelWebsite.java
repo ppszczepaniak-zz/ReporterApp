@@ -27,4 +27,5 @@ public class VowelWebsite extends Website {
         setScore(count);
         setConvertedMsg(newMsg.toString());
     }
+
 }

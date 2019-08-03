@@ -1,6 +1,6 @@
 package websites;
 
-public abstract class Website {
+public abstract class Website implements Observer {
 
     private long score;
     private String convertedMsg;
@@ -26,4 +26,8 @@ public abstract class Website {
     }
 
 
+    @Override
+    public String outputMessage(String msg) {
+        return null;
+    }
 }

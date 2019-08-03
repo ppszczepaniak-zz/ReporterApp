@@ -1,6 +1,6 @@
 package websites;
 
-public class CustomWebsite extends Website {
+public class CustomWebsite extends Website{
 
     @Override
     public void countAndMark(String msg) {
@@ -26,4 +26,5 @@ public class CustomWebsite extends Website {
         setConvertedMsg(stringBuilder.toString());
 
     }
+
 }
