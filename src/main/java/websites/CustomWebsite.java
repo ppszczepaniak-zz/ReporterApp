@@ -1,7 +1,7 @@
 package websites;
 
 public class CustomWebsite extends Website{
-    static final String NAME = "Custom Feed";
+   private static final String NAME = "Custom Feed";
 
     public CustomWebsite() {
         super(NAME);

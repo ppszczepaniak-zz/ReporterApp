@@ -2,7 +2,7 @@ package websites;
 
 public class VowelWebsite extends Website {
 
-    static final String NAME = "Vowel news";
+    private static final String NAME = "Vowel news";
 
     public VowelWebsite() {
         super(NAME);
@@ -18,7 +18,7 @@ public class VowelWebsite extends Website {
                 //Converting entire string to lower case to reduce the comparisons
                 msg = msg.toLowerCase();
                 for (int i = 0; i < msg.length(); i++) {
-                    if (String.valueOf(msg.charAt(i)).matches("[aeiou]")) {
+                    if (String.valueOf(msg.charAt(i)).matches("[aeiouy]")) {
                         count++;
                         newMsg.append(String.valueOf(msg.charAt(i)).toUpperCase());
                     } else {

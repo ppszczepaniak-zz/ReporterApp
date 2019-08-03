@@ -28,11 +28,8 @@ public class Reporter implements Broadcast {
     @Override
     public void broadcastMessage(String msg) {
         for (Website website : websites) {
-            if (website instanceof Website) {
-                website.outputMessage(msg);
-            }
+            website.outputMessage(msg);
         }
     }
-
 
 }
