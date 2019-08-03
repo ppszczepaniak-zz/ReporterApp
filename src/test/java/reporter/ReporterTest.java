@@ -1,12 +1,14 @@
 package reporter;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import websites.ConsonantWebsite;
 import websites.CustomWebsite;
 import websites.VowelWebsite;
 import websites.Website;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class ReporterTest {
 
@@ -25,17 +27,15 @@ public class ReporterTest {
 
     @Test
     public void addWebsiteTest() {
-        Assertions.assertEquals(website1, reporter.getWebsites().get(0));
-        Assertions.assertEquals(website2, reporter.getWebsites().get(1));
-        Assertions.assertEquals(website3, reporter.getWebsites().get(2));
-
+        assertEquals(website1, reporter.getWebsites().get(0));
+        assertEquals(website2, reporter.getWebsites().get(1));
+        assertEquals(website3, reporter.getWebsites().get(2));
     }
 
     @Test
     public void deleteWebsiteTest() {
         reporter.deleteWebsite(website1);
-        Assertions.assertNotEquals(website1, reporter.getWebsites().get(0));
-        Assertions.assertEquals(website2, reporter.getWebsites().get(0));
+        assertNotEquals(website1, reporter.getWebsites().get(0));
+        assertEquals(website2, reporter.getWebsites().get(0));
     }
-
 }
