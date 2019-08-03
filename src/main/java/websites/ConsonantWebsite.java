@@ -1,7 +1,7 @@
 package websites;
 
 public class ConsonantWebsite extends Website {
-    static final String NAME = "The Consonants";
+    private static final String NAME = "The Consonants";
 
     public ConsonantWebsite() {
         super(NAME);
