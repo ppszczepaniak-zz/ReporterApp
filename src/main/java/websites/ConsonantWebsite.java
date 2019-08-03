@@ -17,7 +17,7 @@ public class ConsonantWebsite extends Website {
                 //Converting entire string to lower case to reduce the comparisons
                 msg = msg.toLowerCase();
                 for (int i = 0; i < msg.length(); i++) {
-                    if (String.valueOf(msg.charAt(i)).matches("[a-z&&[^aeiou]]")) {
+                    if (String.valueOf(msg.charAt(i)).matches("[a-z&&[^aeiouy]]")) {
                         count++;
                         newMsg.append(String.valueOf(msg.charAt(i)).toUpperCase());
                     } else {
