@@ -6,7 +6,6 @@ public abstract class Website {
     private String convertedMsg;
 
 
-
     protected abstract void countAndMark(String msg);
 
 
