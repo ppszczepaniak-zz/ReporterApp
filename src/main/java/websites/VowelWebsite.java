@@ -2,6 +2,12 @@ package websites;
 
 public class VowelWebsite extends Website {
 
+    static final String NAME = "Vowel news";
+
+    public VowelWebsite() {
+        super(NAME);
+    }
+
     @Override
     public void countAndMark(String msg) {
         long count = 0;
@@ -28,4 +34,8 @@ public class VowelWebsite extends Website {
         setConvertedMsg(newMsg.toString());
     }
 
+    @Override
+    public String toString() {
+        return "VowelWebsite";
+    }
 }
