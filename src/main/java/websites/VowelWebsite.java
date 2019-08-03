@@ -1,6 +1,6 @@
 package websites;
 
-public class VowelWebsite extends Website {
+public class VowelWebsite extends Website implements Observer {
 
     @Override
     public void countAndMark(String msg) {
@@ -26,5 +26,10 @@ public class VowelWebsite extends Website {
 
         setScore(count);
         setConvertedMsg(newMsg.toString());
+    }
+
+    @Override
+    public String outputMessage(String msg) {
+        return null;
     }
 }

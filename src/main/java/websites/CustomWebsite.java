@@ -1,6 +1,6 @@
 package websites;
 
-public class CustomWebsite extends Website {
+public class CustomWebsite extends Website implements Observer {
 
     @Override
     public void countAndMark(String msg) {
@@ -25,5 +25,10 @@ public class CustomWebsite extends Website {
         setScore(score);
         setConvertedMsg(stringBuilder.toString());
 
+    }
+
+    @Override
+    public String outputMessage(String msg) {
+        return null;
     }
 }
