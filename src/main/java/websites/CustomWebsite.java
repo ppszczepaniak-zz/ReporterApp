@@ -11,7 +11,7 @@ public class CustomWebsite extends Website {
                 msg = msg.toLowerCase();
                 for (int i = 0; i < msg.length(); i++) {
 
-                    if (String.valueOf(msg.charAt(i)).matches("[a-kA-K]")) {
+                    if (String.valueOf(msg.charAt(i)).matches("[a-k]")) {
                         score++;
                         stringBuilder.append(String.valueOf(msg.charAt(i)).toUpperCase());
                     } else {
@@ -20,7 +20,7 @@ public class CustomWebsite extends Website {
                 }
             }
         } catch (NullPointerException e) {
-            System.out.println("Komunikat błędu: " + e.getMessage());
+            System.out.println("ERROR: " + e.getMessage());
         }
         setScore(score);
         setConvertedMsg(stringBuilder.toString());
