@@ -14,7 +14,6 @@ public class vowelWebsiteTest {
     void countTest(String message, int score, boolean result) {
         vowelWebsite.countAndMark(message);
         assertEquals(result, (vowelWebsite.getScore() == score));
-        //test parametryczny za kazdym razem tworzy nowy obiekt (dla każdej linijki z CSV)
     }
 
     @ParameterizedTest

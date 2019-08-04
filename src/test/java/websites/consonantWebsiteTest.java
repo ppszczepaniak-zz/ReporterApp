@@ -13,7 +13,6 @@ public class consonantWebsiteTest {
     void countTest(String message, int score, boolean result) {
         consonantWebsite.countAndMark(message);
         assertEquals(result, (consonantWebsite.getScore() == score));
-        //test parametryczny za kazdym razem tworzy nowy obiekt (dla każdej linijki z CSV)
     }
 
     @ParameterizedTest
@@ -22,5 +21,4 @@ public class consonantWebsiteTest {
         consonantWebsite.countAndMark(initialMsg);
         assertEquals(resultedMsg, (consonantWebsite.getConvertedMsg()));
     }
-
 }
