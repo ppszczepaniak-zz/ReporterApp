@@ -5,9 +5,8 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class vowelWebsiteTest {
-
-    VowelWebsite vowelWebsite = new VowelWebsite();
+class vowelWebsiteTest {
+    private VowelWebsite vowelWebsite = new VowelWebsite();
 
     @ParameterizedTest
     @CsvFileSource(resources = "/vowelsCount.csv")
@@ -22,6 +21,5 @@ public class vowelWebsiteTest {
         vowelWebsite.countAndMark(initialMsg);
         assertEquals(resultedMsg, (vowelWebsite.getConvertedMsg()));
     }
-
 
 }

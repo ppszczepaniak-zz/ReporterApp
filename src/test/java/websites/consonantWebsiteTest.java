@@ -5,8 +5,8 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class consonantWebsiteTest {
-    ConsonantWebsite consonantWebsite = new ConsonantWebsite();
+class consonantWebsiteTest {
+    private ConsonantWebsite consonantWebsite = new ConsonantWebsite();
 
     @ParameterizedTest
     @CsvFileSource(resources = "/consonantsCount.csv")

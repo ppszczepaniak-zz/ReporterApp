@@ -10,12 +10,11 @@ import websites.Website;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class ReporterTest {
-
-    Reporter reporter = new Reporter();
-    Website website1 = new ConsonantWebsite();
-    Website website2 = new CustomWebsite();
-    Website website3 = new VowelWebsite();
+class ReporterTest {
+    private Reporter reporter = new Reporter();
+    private Website website1 = new ConsonantWebsite();
+    private Website website2 = new CustomWebsite();
+    private Website website3 = new VowelWebsite();
     String msg = "Cows lose their jobs as milk prices drop";
 
     @BeforeEach
@@ -26,14 +25,14 @@ public class ReporterTest {
     }
 
     @Test
-    public void addWebsiteTest() {
+    void addWebsiteTest() {
         assertEquals(website1, reporter.getWebsites().get(0));
         assertEquals(website2, reporter.getWebsites().get(1));
         assertEquals(website3, reporter.getWebsites().get(2));
     }
 
     @Test
-    public void deleteWebsiteTest() {
+    void deleteWebsiteTest() {
         reporter.deleteWebsite(website1);
         assertNotEquals(website1, reporter.getWebsites().get(0));
         assertEquals(website2, reporter.getWebsites().get(0));
