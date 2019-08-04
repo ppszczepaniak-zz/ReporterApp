@@ -4,8 +4,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CustomWebsiteTest {
-    Website website = new CustomWebsite();
+class CustomWebsiteTest {
+    private Website website = new CustomWebsite();
 
     @ParameterizedTest
     @CsvFileSource(resources = "/customCount.csv")
